@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Report">
+    <meta name="author" content="Shubham P. Vasaikar">
+
+    <title>Autotest</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap/theme.css" rel="stylesheet">
+    <link href="./mods.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Automated GUI Testing Report</h1>
+        <h3>
+          <span class="label label-default">Application: gedit</span>
+          <span class="label label-danger">Locale: ru_RU</span>
+          <span class="label label-primary">Version: 0.0.1</span>
+          <span class="label label-success">Release: f25</span>
+          <span class="label label-info">Arch: x86_64</span>
+          <span class="label label-warning">Date: 2017-08-02</span>
+      </h3>
+      </div>
+
+
+      <div class="page-header">
+        <h1>Prerequisite Checks</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Gnome Check</h3>
+            </div>
+            <div class="panel-body">
+              
+                gedit is a GNOME Application.
+                <span class="label label-success" style="float: right;">Success</span>
+              
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">PoFilter results.</h3>
+            </div>
+            <div class="panel-body">
+              Pofilter run successfully and output stored in ~/.autotest/pofilter_files.
+              <span class="label label-success" style="float: right;">Success</span>
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Language Pack</h3>
+            </div>
+            <div class="panel-body">
+              
+                Language pack for language ru_RU is installed for gedit.
+                <span class="label label-success" style="float: right;">Success</span>
+              
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">.pot File</h3>
+            </div>
+            <div class="panel-body">
+              
+                .pot file extracted from source and stored in ~/.autotest/pot_files.
+                <span class="label label-success" style="float: right;">Success</span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <h1>Translation Statistics</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 100.0%"></div>
+            <div class="progress-bar progress-bar-warning" style="width: 0.0%"></div>
+            <div class="progress-bar progress-bar-danger" style="width: 0.0%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="text-center"><span class="label label-primary">&nbsp;&nbsp;</span>&nbsp;&nbsp;722 Translated</p>
+        </div>
+        <div class="col-md-4">
+          <p class="text-center"><span class="label label-warning">&nbsp;&nbsp;</span>&nbsp;&nbsp;0 Fuzzy</p>
+        </div>
+        <div class="col-md-4">
+          <p class="text-center"><span class="label label-danger">&nbsp;&nbsp;</span>&nbsp;&nbsp;0 Untranslated</p>
+        </div>
+      </div>
+      <div class="page-header">
+        <h1>Untranslated Strings</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul class="list-group">
+            
+            <li class="list-group-item">gedit</li>
+            
+            <li class="list-group-item">edit-find-symbolic</li>
+            
+            <li class="list-group-item">edit-find-symbolic</li>
+            
+            <li class="list-group-item">yelp.zh_CN</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/extracted_strings</li>
+            
+            <li class="list-group-item">zh_CN.yelp.po</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/pot_files</li>
+            
+            <li class="list-group-item">yelp.pot</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/pot_files</li>
+            
+            <li class="list-group-item">filter.zh_CN.yelp.po</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/pofilter_files</li>
+            
+            <li class="list-group-item">yelp.it_IT</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/extracted_strings</li>
+            
+            <li class="list-group-item">edit-find-symbolic</li>
+            
+            <li class="list-group-item">yelp.zh_CN</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/extracted_strings</li>
+            
+            <li class="list-group-item">zh_CN.yelp.po</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/pot_files</li>
+            
+            <li class="list-group-item">yelp.pot</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/pot_files</li>
+            
+            <li class="list-group-item">filter.zh_CN.yelp.po</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/pofilter_files</li>
+            
+            <li class="list-group-item">yelp.it_IT</li>
+            
+            <li class="list-group-item">/home/poyadav/.autotest/extracted_strings</li>
+            
+            <li class="list-group-item">2</li>
+            
+            <li class="list-group-item">4</li>
+            
+            <li class="list-group-item">8</li>
+            
+            <li class="list-group-item">ActionScript</li>
+            
+            <li class="list-group-item">Ada</li>
+            
+            <li class="list-group-item">ANS-Forth94</li>
+            
+            <li class="list-group-item">ASP</li>
+            
+            <li class="list-group-item">Automake</li>
+            
+            <li class="list-group-item">awk</li>
+            
+            <li class="list-group-item">BennuGD</li>
+            
+            <li class="list-group-item">BibTeX</li>
+            
+            <li class="list-group-item">Bluespec SystemVerilog</li>
+            
+            <li class="list-group-item">Boo</li>
+            
+            <li class="list-group-item">C</li>
+            
+            <li class="list-group-item">C#</li>
+            
+            <li class="list-group-item">C++</li>
+            
+            <li class="list-group-item">ChangeLog</li>
+            
+            <li class="list-group-item">CMake</li>
+            
+            <li class="list-group-item">C/ObjC Header</li>
+            
+            <li class="list-group-item">COBOL</li>
+            
+            <li class="list-group-item">CSS</li>
+            
+            <li class="list-group-item">CSV</li>
+            
+            <li class="list-group-item">CUDA</li>
+            
+            <li class="list-group-item">D</li>
+            
+            <li class="list-group-item">.desktop</li>
+            
+            <li class="list-group-item">Diff</li>
+            
+            <li class="list-group-item">DocBook</li>
+            
+            <li class="list-group-item">DPatch</li>
+            
+            <li class="list-group-item">DTD</li>
+            
+            <li class="list-group-item">Eiffel</li>
+            
+            <li class="list-group-item">Erlang</li>
+            
+            <li class="list-group-item">F#</li>
+            
+            <li class="list-group-item">FCL</li>
+            
+            <li class="list-group-item">Forth</li>
+            
+            <li class="list-group-item">Fortran 95</li>
+            
+            <li class="list-group-item">GAP</li>
+            
+            <li class="list-group-item">Genie</li>
+            
+            <li class="list-group-item">Go</li>
+            
+            <li class="list-group-item">Graphviz Dot</li>
+            
+            <li class="list-group-item">GtkRC</li>
+            
+            <li class="list-group-item">Haskell</li>
+            
+            <li class="list-group-item">HTML</li>
+            
+            <li class="list-group-item">IDL</li>
+            
+            <li class="list-group-item">IDL-Exelis</li>
+            
+            <li class="list-group-item">ImageJ</li>
+            
+            <li class="list-group-item">.ini</li>
+            
+            <li class="list-group-item">J</li>
+            
+            <li class="list-group-item">Jade</li>
+            
+            <li class="list-group-item">Java</li>
+            
+            <li class="list-group-item">JavaScript</li>
+            
+            <li class="list-group-item">JSON</li>
+            
+            <li class="list-group-item">Julia</li>
+            
+            <li class="list-group-item">LaTeX</li>
+            
+            <li class="list-group-item">Lex</li>
+            
+            <li class="list-group-item">libtool</li>
+            
+            <li class="list-group-item">LLVM IR</li>
+            
+            <li class="list-group-item">Lua</li>
+            
+            <li class="list-group-item">m4</li>
+            
+            <li class="list-group-item">Makefile</li>
+            
+            <li class="list-group-item">Mallard</li>
+            
+            <li class="list-group-item">Markdown</li>
+            
+            <li class="list-group-item">Matlab</li>
+            
+            <li class="list-group-item">MediaWiki</li>
+            
+            <li class="list-group-item">Meson</li>
+            
+            <li class="list-group-item">Modelica</li>
+            
+            <li class="list-group-item">MXML</li>
+            
+            <li class="list-group-item">Nemerle</li>
+            
+            <li class="list-group-item">NetRexx</li>
+            
+            <li class="list-group-item">NSIS</li>
+            
+            <li class="list-group-item">Objective-C</li>
+            
+            <li class="list-group-item">Objective-J</li>
+            
+            <li class="list-group-item">OCaml</li>
+            
+            <li class="list-group-item">OCL</li>
+            
+            <li class="list-group-item">Octave</li>
+            
+            <li class="list-group-item">OOC</li>
+            
+            <li class="list-group-item">Opal</li>
+            
+            <li class="list-group-item">OpenCL</li>
+            
+            <li class="list-group-item">Pascal</li>
+            
+            <li class="list-group-item">Perl</li>
+            
+            <li class="list-group-item">PHP</li>
+            
+            <li class="list-group-item">Pig</li>
+            
+            <li class="list-group-item">pkg-config</li>
+            
+            <li class="list-group-item">Prolog</li>
+            
+            <li class="list-group-item">Protobuf</li>
+            
+            <li class="list-group-item">Puppet</li>
+            
+            <li class="list-group-item">Python</li>
+            
+            <li class="list-group-item">Python 3</li>
+            
+            <li class="list-group-item">R</li>
+            
+            <li class="list-group-item">reStructuredText</li>
+            
+            <li class="list-group-item">Ruby</li>
+            
+            <li class="list-group-item">Rust</li>
+            
+            <li class="list-group-item">Scala</li>
+            
+            <li class="list-group-item">Scheme</li>
+            
+            <li class="list-group-item">Scilab</li>
+            
+            <li class="list-group-item">sh</li>
+            
+            <li class="list-group-item">SPARQL</li>
+            
+            <li class="list-group-item">SQL</li>
+            
+            <li class="list-group-item">Standard ML</li>
+            
+            <li class="list-group-item">Sweave</li>
+            
+            <li class="list-group-item">SystemVerilog</li>
+            
+            <li class="list-group-item">Tcl</li>
+            
+            <li class="list-group-item">Texinfo</li>
+            
+            <li class="list-group-item">Thrift</li>
+            
+            <li class="list-group-item">txt2tags</li>
+            
+            <li class="list-group-item">Vala</li>
+            
+            <li class="list-group-item">VB.NET</li>
+            
+            <li class="list-group-item">Verilog</li>
+            
+            <li class="list-group-item">VHDL</li>
+            
+            <li class="list-group-item">XML</li>
+            
+            <li class="list-group-item">XSLT</li>
+            
+            <li class="list-group-item">Yacc</li>
+            
+            <li class="list-group-item">YAML</li>
+            
+            <li class="list-group-item">edit-find-symbolic</li>
+            
+            <li class="list-group-item">home</li>
+            
+            <li class="list-group-item">.autotest</li>
+            
+            <li class="list-group-item">extracted_strings</li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="page-header">
+        <h1>Rendering Errors</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul class="list-group">
+            
+          </ul>
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

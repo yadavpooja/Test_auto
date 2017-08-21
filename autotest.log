@@ -1,0 +1,37 @@
+2017-08-21 11:51:39,534 - INFO  : autotest.checkgtk: Application yelp started successfully.
+2017-08-21 11:51:39,549 - INFO  : autotest.checkgtk: Executable path: /usr/bin/yelp
+2017-08-21 11:51:39,576 - DEBUG : autotest.checkgtk: Program GTK? command exited with 0
+2017-08-21 11:51:39,579 - INFO  : autotest.checklocales: .mo file present.
+2017-08-21 11:51:39,580 - INFO  : autotest.qualitychecks: Directory /home/poyadav/.autotest/pot_files created.
+2017-08-21 11:51:39,590 - INFO  : autotest.qualitychecks: .po file saved at /home/poyadav/.autotest/pot_files/zh_CN.yelp.po.
+2017-08-21 11:51:39,590 - INFO  : autotest.qualitychecks: Directory /home/poyadav/.autotest/pofilter_files created.
+2017-08-21 11:51:43,459 - INFO  : autotest.extractpot: Download URL: https://kojipkgs.fedoraproject.org/packages/yelp/3.22.0/1.fc25/src/yelp-3.22.0-1.fc25.src.rpm
+2017-08-21 11:51:46,621 - INFO  : autotest.extractpot: src.rpm downloaded.
+2017-08-21 11:51:46,807 - INFO  : autotest.extractpot: src.rpm unpacked in /home/poyadav/.autotest/srpm
+2017-08-21 11:51:47,018 - INFO  : autotest.extractpot: TODO insert command output here.
+2017-08-21 11:51:47,077 - INFO  : autotest.extractpot: TODO insert command output here.
+2017-08-21 11:51:47,329 - INFO  : autotest.checkgtk: Application yelp started successfully.
+2017-08-21 11:51:47,333 - INFO  : autotest.checkgtk: Executable path: /usr/bin/yelp
+2017-08-21 11:51:47,362 - DEBUG : autotest.checkgtk: Program GTK? command exited with 0
+2017-08-21 11:52:25,036 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,037 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 65536
+2017-08-21 11:52:25,240 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,240 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 666
+2017-08-21 11:52:25,241 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,241 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 65536
+2017-08-21 11:52:25,406 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,407 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 4964
+2017-08-21 11:52:25,420 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,420 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 787
+2017-08-21 11:52:25,421 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,421 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 65536
+2017-08-21 11:52:25,586 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,586 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 373
+2017-08-21 11:52:25,587 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,587 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 315
+2017-08-21 11:52:25,588 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,588 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 309
+2017-08-21 11:52:25,589 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,589 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 65536
+2017-08-21 11:52:25,788 - DEBUG : PIL.PngImagePlugin: STREAM IHDR 16 13
+2017-08-21 11:52:25,788 - DEBUG : PIL.PngImagePlugin: STREAM IDAT 41 504

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Report">
+    <meta name="author" content="Shubham P. Vasaikar">
+
+    <title>Autotest</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap/theme.css" rel="stylesheet">
+    <link href="./mods.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Automated GUI Testing Report</h1>
+        <h3>
+          <span class="label label-default">Application: {{app_name}}</span>
+          <span class="label label-danger">Locale: {{lang_code}}</span>
+          <span class="label label-primary">Version: {{app_ver}}</span>
+          <span class="label label-success">Release: {{app_rel}}</span>
+          <span class="label label-info">Arch: {{sys_arch}}</span>
+          <span class="label label-warning">Date: {{rep_date}}</span>
+      </h3>
+      </div>
+
+
+      <div class="page-header">
+        <h1>Prerequisite Checks</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Gnome Check</h3>
+            </div>
+            <div class="panel-body">
+              {% if isGtk == 0 %}
+                {{app_name}} is a GNOME Application.
+                <span class="label label-success" style="float: right;">Success</span>
+              {% else %}
+                {{app_name}} is not a GNOME Application.
+                <span class="label label-danger" style="float: right;">Failed</span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">PoFilter results.</h3>
+            </div>
+            <div class="panel-body">
+              Pofilter run successfully and output stored in ~/.autotest/pofilter_files.
+              <span class="label label-success" style="float: right;">Success</span>
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Language Pack</h3>
+            </div>
+            <div class="panel-body">
+              {% if po_exist == True %}
+                Language pack for language {{ lang_code }} is installed for {{ app_name }}.
+                <span class="label label-success" style="float: right;">Success</span>
+              {% else %}
+                Language pack for language {{ lang_code }} is not installed for {{ app_name }}.
+                <span class="label label-danger" style="float: right;">Failed</span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">.pot File</h3>
+            </div>
+            <div class="panel-body">
+              {% if pot_exist == True %}
+                .pot file extracted from source and stored in ~/.autotest/pot_files.
+                <span class="label label-success" style="float: right;">Success</span>
+              {% else %}
+                .pot file could not be extracted.
+                <span class="label label-danger" style="float: right;">Failed</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <h1>Translation Statistics</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: {{ per_translated }}%"></div>
+            <div class="progress-bar progress-bar-warning" style="width: {{ per_fuzzy }}%"></div>
+            <div class="progress-bar progress-bar-danger" style="width: {{ per_untranslated }}%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="text-center"><span class="label label-primary">&nbsp;&nbsp;</span>&nbsp;&nbsp;{{ translated }} Translated</p>
+        </div>
+        <div class="col-md-4">
+          <p class="text-center"><span class="label label-warning">&nbsp;&nbsp;</span>&nbsp;&nbsp;{{ fuzzy }} Fuzzy</p>
+        </div>
+        <div class="col-md-4">
+          <p class="text-center"><span class="label label-danger">&nbsp;&nbsp;</span>&nbsp;&nbsp;{{ untranslated }} Untranslated</p>
+        </div>
+      </div>
+      <div class="page-header">
+        <h1>Untranslated Strings</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul class="list-group">
+            {% for item in untranslated_list %}
+            <li class="list-group-item">{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="page-header">
+        <h1>Rendering Errors</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul class="list-group">
+            {% for item in bad_renders_list %}
+            <li class="list-group-item">{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
